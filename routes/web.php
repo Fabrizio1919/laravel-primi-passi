@@ -14,5 +14,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $message = 'Hello World';
+    return view('index',compact('message'));
+});
+
+Route::get('/about', function () {
+    $message = 'Hello World';
+    return view('about',compact('message'));
+});
+
+Route::get('/news', function () {
+    $message = 'Hello World';
+    return view('news',compact('message'));
+});
+
+Route::get('/collections', function () {
+    $message = 'Hello World';
+    return view('collections',compact('message'));
+});
+
+Route::get('/contact', function () {
+    $message = 'Hello World';
+    return view('contact',compact('message'));
 });
